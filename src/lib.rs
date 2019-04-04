@@ -1,3 +1,5 @@
+#![feature(non_ascii_idents)]
+
 // define types
 type OidType = u16;
 type PrivateOid = u16;
@@ -17,6 +19,7 @@ struct ManagedObjectId {
 }
 
 // define nomenclature partitions
+#[repr(u16)]
 enum NomPartition {
     nom_part_unspec = 0 as u16,
     nom_part_obj = 1 as u16,
@@ -56,7 +59,7 @@ type AttributeIdList = Array<OidType>;
 
 //define Time Types
 type RelativeTime = u32;
-type HighSerRelativeTime = &str;
+type HighSerRelativeTime = &'static str;
 struct AbsoluteTime {
     century: u8,
     year: u8,
@@ -76,6 +79,7 @@ struct Date {
 }
 
 //define Operational State
+#[repr(u16)]
 enum OperationStateState {
     disabled = 0 as u16,
     enabled = 1 as u16,
@@ -83,6 +87,7 @@ enum OperationStateState {
 }
 
 //define Administrative State
+#[repr(u16)]
 enum AdministrativeState {
     locked = 0 as u16,
     unlocked = 1 as u16,
@@ -91,18 +96,19 @@ enum AdministrativeState {
 
 //define Color Data
 // -- 3 bit representation --
-enum SimpleColour {
-    col_black = 0b000,
-    col_red = 0b100,
-    col_green = 0b010,
-    col_yellow = 0b110,
-    col_blue = 0b001,
-    col_magenta = 0b101,
-    col_cyan = 0b011,
-    col_white = 0b111,
-}
+// enum SimpleColour {
+//     col_black = 0b000,
+//     col_red = 0b100,
+//     col_green = 0b010,
+//     col_yellow = 0b110,
+//     col_blue = 0b001,
+//     col_magenta = 0b101,
+//     col_cyan = 0b011,
+//     col_white = 0b111,
+// }
 
 // -- U16 representation --
+#[repr(u16)]
 enum SimpleColour {
     col_black = 0 as u16,
     col_red = 1 as u16,
@@ -115,6 +121,7 @@ enum SimpleColour {
 }
 
 //define Locale Data
+#[repr(u32)]
 enum Language {
     Abkhazian = 0x61620000 as u32,
     Afar = 0x61610000 as u32,
@@ -308,6 +315,7 @@ enum Language {
 }
 
 //define Country Data
+#[repr(u32)]
 enum Country {
     Afghanistan = 0x61660000 as u32,
     Aland_Islands = 0x61780000 as u32,
@@ -366,7 +374,7 @@ enum Country {
     Congo__Democratic_Republic_of_the = 0x63640000 as u32,
     Cook_Islands = 0x636B0000 as u32,
     Costa_Rica = 0x63720000 as u32,
-    Côte_d'Ivoire = 0x63690000 as u32,
+    Côte_d_Ivoire = 0x63690000 as u32,
     Croatia = 0x68720000 as u32,
     Cuba = 0x63750000 as u32,
     Curaçao = 0x63770000 as u32,
@@ -428,7 +436,7 @@ enum Country {
     Kazakhstan = 0x6B7A0000 as u32,
     Kenya = 0x6B650000 as u32,
     Kiribati = 0x6B690000 as u32,
-    Korea__Democratic_People's_Republic_of = 0x6B700000 as u32,
+    Korea__Democratic_Peoples_Republic_of = 0x6B700000 as u32,
     Korea__Republic_of = 0x6B720000 as u32,
     Kuwait = 0x6B770000 as u32,
     Kyrgyzstan = 0x6B670000 as u32,
@@ -522,7 +530,7 @@ enum Country {
     Spain = 0x65730000 as u32,
     Sri_Lanka = 0x6C6B0000 as u32,
     Sudan = 0x73640000 as u32,
-    Suriname_* = 0x73720000 as u32,
+    Suriname = 0x73720000 as u32,
     Svalbard_and_Jan_Mayen_Islands = 0x736A0000 as u32,
     Swaziland = 0x737A0000 as u32,
     Sweden = 0x73650000 as u32,
@@ -530,7 +538,7 @@ enum Country {
     Syrian_Arab_Republic__Syria_ = 0x73790000 as u32,
     Taiwan = 0x74770000 as u32,
     Tajikistan = 0x746A0000 as u32,
-    Tanzania_*__United_Republic_of = 0x747A0000 as u32,
+    Tanzania__United_Republic_of = 0x747A0000 as u32,
     Thailand = 0x74680000 as u32,
     Timor_Leste = 0x746C0000 as u32,
     Togo = 0x74670000 as u32,
@@ -561,6 +569,7 @@ enum Country {
     Zimbabwe = 0x7A770000 as u32,
 }
 
+#[repr(u16)]
 enum CharSet {
     charset_unspec = 0u16,
     charset_iso_10646_ucs_2 = 1000u16,
@@ -587,6 +596,7 @@ enum CharSet {
     charset_gb_2312 = 2025u16,
 }
 
+#[repr(str)]
 enum StringFlags {
     str_flag_nt = "0", //strings shall be null terminated
 }
@@ -611,9 +621,23 @@ struct ExtNomenRef {
 struct ExtObjRelationEntry {
     relation_type: OidType,
     related_object: OidType,
-    relation_attributes: AttributeList
+    relation_attributes: AttributeList,
 }
 
 type ExtObjRelationList = Array<ExtObjRelationEntry>;
 
-
+#[macro_export]
+macro_rules! nomenclature {
+    ( MDC_MOC_TOP ) => {
+        70u16
+    };
+    ( MDC_ATTR_CLASS ) => {
+        2491u16
+    };
+    ( MDC_ATTR_NAME_BINDING ) => {
+        2510u16
+    };
+    ( MDC_ATTR_LOCALE ) => {
+        2600u16
+    };
+}
