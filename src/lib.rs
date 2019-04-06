@@ -1,4 +1,7 @@
 #![feature(non_ascii_idents)]
+#![allow(non_camel_case_types)]
+
+use std::any::Any;
 
 // define types
 type OidType = u16;
@@ -51,11 +54,11 @@ struct Type {
 //define Attribute value assertion
 struct AVA_Type {
     attribute_id: OidType,
-    attribute_value: any,
+    attribute_value: &'static mut Any,
 }
 
-type AttributeList = Array<AVA_Type>;
-type AttributeIdList = Array<OidType>;
+type AttributeList = [AVA_Type];
+type AttributeIdList = [OidType];
 
 //define Time Types
 type RelativeTime = u32;
@@ -596,9 +599,8 @@ enum CharSet {
     charset_gb_2312 = 2025u16,
 }
 
-#[repr(str)]
 enum StringFlags {
-    str_flag_nt = "0", //strings shall be null terminated
+    str_flag_nt = 0, //strings shall be null terminated
 }
 
 struct StringSpec {
@@ -615,7 +617,7 @@ struct Locale {
 
 struct ExtNomenRef {
     nomenclature_id: OidType,
-    nomenclature_code: any,
+    nomenclature_code: Any,
 }
 
 struct ExtObjRelationEntry {
@@ -624,7 +626,7 @@ struct ExtObjRelationEntry {
     relation_attributes: AttributeList,
 }
 
-type ExtObjRelationList = Array<ExtObjRelationEntry>;
+type ExtObjRelationList = [ExtObjRelationEntry];
 
 #[macro_export]
 macro_rules! nomenclature {
