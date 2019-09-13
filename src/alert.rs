@@ -1,28 +1,23 @@
-mod alert {
-    #[macro_export]
-    macro_rules! nomenclature {
-        //class names
-        (MDC_MOC_VMO_AL                     ) => {  52u16};
-        (MDC_MOC_VMO_AL_STAT                ) => {  53u16};
-        (MDC_MOC_VMO_AL_MON                 ) => {  54u16};
-        //attributes
-        (MDC_ATTR_AL_COND                   ) => {2476u16};
-        (MDC_ATTR_AL_LIMIT                  ) => {2477u16};
-        (MDC_ATTR_VMO_REF                   ) => {2468u16};
-        (MDC_ATTR_AL_STAT_AL_C_LIST         ) => {2312u16};
-        (MDC_ATTR_AL_STAT_T_AL_LIST         ) => {2315u16};
-        (MDC_ATTR_AL_STAT_P_AL_LIST         ) => {2314u16};
-        (MDC_ATTR_AL_LIMIT_SPEC_LIST        ) => {2305u16};
-        (MDC_ATTR_DEV_AL_COND               ) => {2326u16};
-        (MDC_ATTR_AL_MON_P_AL_LIST          ) => {2306u16};
-        (MDC_ATTR_AL_MON_T_AL_LIST          ) => {2308u16};
-        (MDC_ATTR_AL_MON_S_AL_LIST          ) => {2307u16};
-        (MDC_ATTR_TIME_PD_AL_SUSP           ) => {2446u16};
-        //attribute groups
-        (MDC_ATTR_GRP_AL                    ) => {2067u16};
-        (MDC_ATTR_GRP_AL_STAT               ) => {2050u16};
-        (MDC_ATTR_GRP_AL_MON                ) => {2049u16};
-        //no behaviours
-        //no notifications
-    }
-}
+//class names
+pub const MDC_MOC_VMO_AL                    :u16  =   52;
+pub const MDC_MOC_VMO_AL_STAT               :u16  =   53;
+pub const MDC_MOC_VMO_AL_MON                :u16  =   54;
+//attributes
+pub const MDC_ATTR_AL_COND                  :u16  = 2476;
+pub const MDC_ATTR_AL_LIMIT                 :u16  = 2477;
+pub const MDC_ATTR_VMO_REF                  :u16  = 2468;
+pub const MDC_ATTR_AL_STAT_AL_C_LIST        :u16  = 2312;
+pub const MDC_ATTR_AL_STAT_T_AL_LIST        :u16  = 2315;
+pub const MDC_ATTR_AL_STAT_P_AL_LIST        :u16  = 2314;
+pub const MDC_ATTR_AL_LIMIT_SPEC_LIST       :u16  = 2305;
+pub const MDC_ATTR_DEV_AL_COND              :u16  = 2326;
+pub const MDC_ATTR_AL_MON_P_AL_LIST         :u16  = 2306;
+pub const MDC_ATTR_AL_MON_T_AL_LIST         :u16  = 2308;
+pub const MDC_ATTR_AL_MON_S_AL_LIST         :u16  = 2307;
+pub const MDC_ATTR_TIME_PD_AL_SUSP          :u16  = 2446;
+//attribute groups
+pub const MDC_ATTR_GRP_AL                   :u16  = 2067;
+pub const MDC_ATTR_GRP_AL_STAT              :u16  = 2050;
+pub const MDC_ATTR_GRP_AL_MON               :u16  = 2049;
+//no behaviours
+//no notifications

@@ -1,49 +1,44 @@
-mod archival {
-    #[macro_export]
-    macro_rules! nomenclature {
-        //class names
-        (MDC_MOC_ARCHIVE_MULTI_PT                ) => {  63_u16};
-        (MDC_MOC_ARCHIVE_PT                      ) => {  64_u16};
-        (MDC_MOC_ARCHIVE_SESSION                 ) => {  65_u16};
-        (MDC_MOC_PHYSICIAN                       ) => {  67_u16};
-        (MDC_MOC_SESSION_TEST                    ) => {  69_u16};
-        (MDC_MOC_SESSION_NOTES                   ) => {  68_u16};
-        //attributes
-        (MDC_ATTR_ID_HANDLE                      ) => {2337_u16};
-        (MDC_ATTR_SYS_ID                         ) => {2436_u16};
-        (MDC_ATTR_LOCATION                       ) => {2509_u16};
-        (MDC_ATTR_NAME_STUDY                     ) => {2531_u16};
-        (MDC_ATTR_ARCHIVE_VERS                   ) => {2480_u16};
-        (MDC_ATTR_NAME_SYS                       ) => {2543_u16};
-        (MDC_ATTR_PROC_HIST                      ) => {2517_u16};
-        (MDC_ATTR_PROTECTION                     ) => {2519_u16};
-        (MDC_ATTR_ID_SESS_ARCHIVE                ) => {2507_u16};
-        (MDC_ATTR_NAME_SESS_ARCHIVE              ) => {2513_u16};
-        (MDC_ATTR_SESS_ARCHIVE_COMMENTS          ) => {2530_u16};
-        (MDC_ATTR_TIME_START                     ) => {2538_u16};
-        (MDC_ATTR_TIME_STOP                      ) => {2539_u16};
-        (MDC_ATTR_ID_Physician                   ) => {2503_u16};
-        (MDC_ATTR_Auth_Level                     ) => {2481_u16};
-        (MDC_ATTR_PHYSICIAN_NAME                 ) => {2544_u16};
-        (MDC_ATTR_PHYSICIAN_NAME_GIVEN           ) => {2546_u16};
-        (MDC_ATTR_PHYSICIAN_NAME_FAMILY          ) => {2545_u16};
-        (MDC_ATTR_PHYSICIAN_NAME_MIDDLE          ) => {2547_u16};
-        (MDC_ATTR_PHYSICIAN_NAME_TITLE           ) => {2548_u16};
-        (MDC_ATTR_ID_SESS_TEST_ARCHIVE           ) => {2506_u16};
-        (MDC_ATTR_NAME_SESS_TEST_ARCHIVE         ) => {2512_u16};
-        (MDC_ATTR_SESS_TEST_ARCHIVE_COMMENTS     ) => {2529_u16};
-        (MDC_ATTR_ID_SESS_NOTES_ARCHIVE          ) => {2505_u16};
-        (MDC_ATTR_NAME_SESS_NOTES_ARCHIVE        ) => {2511_u16};
-        (MDC_ATTR_SESS_NOTES_ARCHIVE_COMMENTS    ) => {2528_u16};
-        (MDC_ATTR_Findings                       ) => {2500_u16};
-        (MDC_ATTR_CODE_DIAGNOSTIC                ) => {2492_u16};
-        (MDC_ATTR_DESC_Diagnostic                ) => {2494_u16};
-        (MDC_ATTR_Code_Procedure                 ) => {2493_u16};
-        (MDC_ATTR_DESC_PROCEDURE                 ) => {2495_u16};
-        //attribute groups
-        (MDC_ATTR_GRP_ARCHIVE                    ) => {2068_u16};
-        (MDC_ATTR_GRP_PHYSICIAN                  ) => {2071_u16};
-        //no behaviours
-        //no notifications
-    }
-}
+//class names
+pub const MDC_MOC_ARCHIVE_MULTI_PT                 :u16 =   63;
+pub const MDC_MOC_ARCHIVE_PT                       :u16 =   64;
+pub const MDC_MOC_ARCHIVE_SESSION                  :u16 =   65;
+pub const MDC_MOC_PHYSICIAN                        :u16 =   67;
+pub const MDC_MOC_SESSION_TEST                     :u16 =   69;
+pub const MDC_MOC_SESSION_NOTES                    :u16 =   68;
+//attributes
+pub const MDC_ATTR_ID_HANDLE                       :u16 = 2337;
+pub const MDC_ATTR_SYS_ID                          :u16 = 2436;
+pub const MDC_ATTR_LOCATION                        :u16 = 2509;
+pub const MDC_ATTR_NAME_STUDY                      :u16 = 2531;
+pub const MDC_ATTR_ARCHIVE_VERS                    :u16 = 2480;
+pub const MDC_ATTR_NAME_SYS                        :u16 = 2543;
+pub const MDC_ATTR_PROC_HIST                       :u16 = 2517;
+pub const MDC_ATTR_PROTECTION                      :u16 = 2519;
+pub const MDC_ATTR_ID_SESS_ARCHIVE                 :u16 = 2507;
+pub const MDC_ATTR_NAME_SESS_ARCHIVE               :u16 = 2513;
+pub const MDC_ATTR_SESS_ARCHIVE_COMMENTS           :u16 = 2530;
+pub const MDC_ATTR_TIME_START                      :u16 = 2538;
+pub const MDC_ATTR_TIME_STOP                       :u16 = 2539;
+pub const MDC_ATTR_ID_PHYSICIAN                    :u16 = 2503;
+pub const MDC_ATTR_AUTH_LEVEL                      :u16 = 2481;
+pub const MDC_ATTR_PHYSICIAN_NAME                  :u16 = 2544;
+pub const MDC_ATTR_PHYSICIAN_NAME_GIVEN            :u16 = 2546;
+pub const MDC_ATTR_PHYSICIAN_NAME_FAMILY           :u16 = 2545;
+pub const MDC_ATTR_PHYSICIAN_NAME_MIDDLE           :u16 = 2547;
+pub const MDC_ATTR_PHYSICIAN_NAME_TITLE            :u16 = 2548;
+pub const MDC_ATTR_ID_SESS_TEST_ARCHIVE            :u16 = 2506;
+pub const MDC_ATTR_NAME_SESS_TEST_ARCHIVE          :u16 = 2512;
+pub const MDC_ATTR_SESS_TEST_ARCHIVE_COMMENTS      :u16 = 2529;
+pub const MDC_ATTR_ID_SESS_NOTES_ARCHIVE           :u16 = 2505;
+pub const MDC_ATTR_NAME_SESS_NOTES_ARCHIVE         :u16 = 2511;
+pub const MDC_ATTR_SESS_NOTES_ARCHIVE_COMMENTS     :u16 = 2528;
+pub const MDC_ATTR_FINDINGS                        :u16 = 2500;
+pub const MDC_ATTR_CODE_DIAGNOSTIC                 :u16 = 2492;
+pub const MDC_ATTR_DESC_DIAGNOSTIC                 :u16 = 2494;
+pub const MDC_ATTR_Code_PROCEDURE                  :u16 = 2493;
+pub const MDC_ATTR_DESC_PROCEDURE                  :u16 = 2495;
+//attribute groups
+pub const MDC_ATTR_GRP_ARCHIVE                     :u16 = 2068;
+pub const MDC_ATTR_GRP_PHYSICIAN                   :u16 = 2071;
+//no behaviours
+//no notifications

@@ -4686,63 +4686,63 @@ Authorized licensed use limited to: Vanderbilt University Libraries. Downloaded 
 Authorized licensed use limited to: Vanderbilt University Libraries. Downloaded on April 02,2019 at 13:42:59 UTC from IEEE Xplore. Restrictions apply.
                                                                                                                                                                                                                                                       Table A.6.3—Vital signs units of measurement (continued)
 
-                                                                                                                                                                                                                                                                                         Symbol                                        Code
-                                                                                                                                                                                                                   Dimension                        Unit of measurement                                              Reference ID
-                                                                                                                                                                                                                                                                                     (not normative)                                (base code)
+                                                                                 Symbol                                        Code
+           Dimension                        Unit of measurement                                              Reference ID
+                                                                             (not normative)                                (base code)
 
-                                                                                                                                                                                                                                         <magnitude> gram(s) per liter per day      g l–1 d–1          MDC_DIM_X_G_PER_L_PER_DAY            3648
+                                 <magnitude> gram(s) per liter per day      g l–1 d–1          MDC_DIM_X_G_PER_L_PER_DAY            3648
 
-                                                                                                                                                                                                           L–1MT–1 (dynamic viscosity)
+   L–1MT–1 (dynamic viscosity)
 
-                                                                                                                                                                                                                                         <magnitude> gram(s) per meter per second   g m–1 s–1          MDC_DIM_X_G_PER_M_PER_SEC            3680
-                                                                                                                                                                                                                                                                                                                                                   PART 10101: NOMENCLATURE
-
-
-
-
-                                                                                                                                                                                                           LMT–1 (momentum, impulse)
-
-                                                                                                                                                                                                                                         <magnitude> gram meter(s) per second       gm s–1             MDC_DIM_X_G_M_PER_SEC                3712
-
-                                                                                                                                                                                                                                         <magnitude> Newton second(s)               Ns                 MDC_DIM_X_NEWTON_SEC                 3744
+                                 <magnitude> gram(s) per meter per second   g m–1 s–1          MDC_DIM_X_G_PER_M_PER_SEC            3680
+                                                                                                                                           PART 10101: NOMENCLATURE
 
 
 
 
-                                                                                                                                                         Copyright © 2004 ISO/IEEE. All rights reserved.
-                                                                                                                                                                                                           LMT–2 (force)
+   LMT–1 (momentum, impulse)
 
-                                                                                                                                                                                                                                         <magnitude> Newton                         N                  MDC_DIM_X_NEWTON                     3776
+                                 <magnitude> gram meter(s) per second       gm s–1             MDC_DIM_X_G_M_PER_SEC                3712
 
-                                                                                                                                                                                                                                         <magnitude> dyne                           dyn                MDC_DIM_X_DYNE                       3808
-
-                                                                                                                                                                                                           L–1MT–2 (pressure)
-
-                                                                                                                                                                                                                                         <magnitude> Pascal                         Pa                 MDC_DIM_X_PASCAL                     3840
-
-                                                                                                                                                                                                                                         millimeter(s) of mercury                   mmHg               MDC_DIM_MMHG                         3872
-
-                                                                                                                                                                                                                                         centimeter of water                        cm H2O             MDC_DIM_CM_H2O                       3904
-
-                                                                                                                                                                                                                                         <magnitude> bar                            bar                MDC_DIM_X_BAR                        3936
-
-                                                                                                                                                                                                                                         <magnitude> pounds per square inch         psi                MDC_DIM_PSI                          6592
-
-                                                                                                                                                                                                           L2MT–2 (energy)
-
-                                                                                                                                                                                                                                         <magnitude> joule(s)                       J                  MDC_DIM_X_JOULES                     3968
-
-                                                                                                                                                                                                                                         <magnitude> electronvolt(s)                eV                 MDC_DIM_EVOLT                        4000
-
-                                                                                                                                                                                                           L2MT–3 (power)
-
-                                                                                                                                                                                                                                         <magnitude> watt(s)                        W                  MDC_DIM_X_WATT                       4032
+                                 <magnitude> Newton second(s)               Ns                 MDC_DIM_X_NEWTON_SEC                 3744
 
 
 
 
-                                                                                                                                                         69
-                                                                                                                                                                                                                                                                                                                                                   ISO/IEEE 11073-10101:2004(E)
+Copyright © 2004 ISO/IEEE. All rights reserved.
+   LMT–2 (force)
+
+                                 <magnitude> Newton                         N                  MDC_DIM_X_NEWTON                     3776
+
+                                 <magnitude> dyne                           dyn                MDC_DIM_X_DYNE                       3808
+
+   L–1MT–2 (pressure)
+
+                                 <magnitude> Pascal                         Pa                 MDC_DIM_X_PASCAL                     3840
+
+                                 millimeter(s) of mercury                   mmHg               MDC_DIM_MMHG                         3872
+
+                                 centimeter of water                        cm H2O             MDC_DIM_CM_H2O                       3904
+
+                                 <magnitude> bar                            bar                MDC_DIM_X_BAR                        3936
+
+                                 <magnitude> pounds per square inch         psi                MDC_DIM_PSI                          6592
+
+   L2MT–2 (energy)
+
+                                 <magnitude> joule(s)                       J                  MDC_DIM_X_JOULES                     3968
+
+                                 <magnitude> electronvolt(s)                eV                 MDC_DIM_EVOLT                        4000
+
+   L2MT–3 (power)
+
+                                 <magnitude> watt(s)                        W                  MDC_DIM_X_WATT                       4032
+
+
+
+
+69
+                                                                                                                                           ISO/IEEE 11073-10101:2004(E)
 
 
 
@@ -4753,59 +4753,59 @@ Authorized licensed use limited to: Vanderbilt University Libraries. Downloaded 
 
 
 
-                                                                                                                                                         70
-                                                                                                                                                                                                                                                                                               Symbol                                             Code
-                                                                                                                                                                                                                     Dimension                        Unit of measurement                                                Reference ID
-                                                                                                                                                                                                                                                                                           (not normative)                                     (base code)
+ 70
+                                                                                                                                       Symbol                                             Code
+             Dimension                        Unit of measurement                                                Reference ID
+                                                                                   (not normative)                                     (base code)
 
-                                                                                                                                                                                                           L–4MT–1 (hydraulic
-                                                                                                                                                                                                           impedance)
+   L–4MT–1 (hydraulic
+   impedance)
 
-                                                                                                                                                                                                                                            <magnitude> Pascal second per cubic meter     Pa s m–3           MDC_DIM_X_PASCAL_SEC_PER_M_CUBE           4064
-                                                                                                                                                                                                                                                                                                                                                              ISO/IEEE 11073-10101:2004(E)
-
-
-
-
-                                                                                                                                                                                                                                            <magnitude> Pascal second per liter           Pa s l–1           MDC_DIM_X_PASCAL_SEC_PER_L                4096
-
-                                                                                                                                                                                                                                            <magnitude> dyne second per cm5               dyn s cm–5         MDC_DIM_X_DYNE_PER_SEC_PER_CM5            4128
-
-                                                                                                                                                                                                           L4M–1T2 (compliance)
-
-                                                                                                                                                                                                                                            <magnitude> liter per centimeter of water     l (cmH2O)–1        MDC_DIM_X_L_PER_CM_H2O                    5888
-
-                                                                                                                                                                                                                                            <magnitude> liter per millimeter of mercury   l (mmHg)–1         MDC_DIM_X_L_PER_MM_HG                     6272
-
-                                                                                                                                                                                                                                            <magnitude> liter per Pascal                  l Pa–1             MDC_DIM_X_L_PER_MM_PA                     6304
-
-                                                                                                                                                                                                           L–44M1T–2 (elastance)
-
-                                                                                                                                                                                                                                            centimeter of water per <magnitude> liter     cmH2O l–1          MDC_DIM_CM_H2O_PER_L                      6144
-
-                                                                                                                                                                                                                                            millimeter of mercury per <magnitude> liter   mmHg l–1           MDC_DIM_MM_HG_PER_X_L                     6336
-
-                                                                                                                                                                                                                                            Pascal per <magnitude> liter                  Pa l–1             MDC_DIM_PA_PER_X_L                        6368
-
-                                                                                                                                                                                                                                            per <magnitude> liter per minute              l–1 min–1          MDC_DIM_PER_X_L_PER_MIN                   6528
-
-                                                                                                                                                                                                           I (electrical current)
-
-                                                                                                                                                                                                                                            <magnitude> ampere(s)                         A                  MDC_DIM_X_AMPS                            4160
-
-                                                                                                                                                                                                           IT (electrical charge)
-
-                                                                                                                                                                                                                                            <magnitude> coulomb(s)                        C                  MDC_DIM_X_COULOMB                         4192
-
-                                                                                                                                                                                                                                            <magnitude> ampere(s) hour                    Ah                 MDC_DIM_X_AMP_HR                          6080
-
-                                                                                                                                                                                                           IL–1 (magnetic field strength)
+                                    <magnitude> Pascal second per cubic meter     Pa s m–3           MDC_DIM_X_PASCAL_SEC_PER_M_CUBE           4064
+                                                                                                                                                      ISO/IEEE 11073-10101:2004(E)
 
 
 
 
-                                                                                                                                                         Copyright © 2004 ISO/IEEE. All rights reserved.
-                                                                                                                                                                                                                                                                                                                                                              HEALTH INFORMATICS — POINT-OF-CARE MEDICAL DEVICE COMMUNICATION
+                                    <magnitude> Pascal second per liter           Pa s l–1           MDC_DIM_X_PASCAL_SEC_PER_L                4096
+
+                                    <magnitude> dyne second per cm5               dyn s cm–5         MDC_DIM_X_DYNE_PER_SEC_PER_CM5            4128
+
+   L4M–1T2 (compliance)
+
+                                    <magnitude> liter per centimeter of water     l (cmH2O)–1        MDC_DIM_X_L_PER_CM_H2O                    5888
+
+                                    <magnitude> liter per millimeter of mercury   l (mmHg)–1         MDC_DIM_X_L_PER_MM_HG                     6272
+
+                                    <magnitude> liter per Pascal                  l Pa–1             MDC_DIM_X_L_PER_MM_PA                     6304
+
+   L–44M1T–2 (elastance)
+
+                                    centimeter of water per <magnitude> liter     cmH2O l–1          MDC_DIM_CM_H2O_PER_L                      6144
+
+                                    millimeter of mercury per <magnitude> liter   mmHg l–1           MDC_DIM_MM_HG_PER_X_L                     6336
+
+                                    Pascal per <magnitude> liter                  Pa l–1             MDC_DIM_PA_PER_X_L                        6368
+
+                                    per <magnitude> liter per minute              l–1 min–1          MDC_DIM_PER_X_L_PER_MIN                   6528
+
+   I (electrical current)
+
+                                    <magnitude> ampere(s)                         A                  MDC_DIM_X_AMPS                            4160
+
+   IT (electrical charge)
+
+                                    <magnitude> coulomb(s)                        C                  MDC_DIM_X_COULOMB                         4192
+
+                                    <magnitude> ampere(s) hour                    Ah                 MDC_DIM_X_AMP_HR                          6080
+
+   IL–1 (magnetic field strength)
+
+
+
+
+Copyright © 2004 ISO/IEEE. All rights reserved.
+                                                                                                                                                      HEALTH INFORMATICS — POINT-OF-CARE MEDICAL DEVICE COMMUNICATION
 
 
 

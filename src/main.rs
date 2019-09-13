@@ -1,3 +1,5 @@
+mod vitals_devices;
+
 fn main() {
-    println!("Hello, world!");
+    println!("{}", vitals_devices::MDC_DEV_ANALY);
 }
