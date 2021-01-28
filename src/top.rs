@@ -3,11 +3,11 @@
 
 use std::any::Any;
 
-pub const MDC_MOC_TOP            :u16 =    70;
-pub const MDC_ATTR_CLASS         :u16 =  2491;
-pub const MDC_ATTR_NAME_BINDING  :u16 =  2510;
-pub const MDC_ATTR_LOCALE        :u16 =  2600;
-pub const MDC_NOTI_ATTR_UPDT     :u16 =  3330;
+pub const MDC_MOC_TOP: u16 = 70;
+pub const MDC_ATTR_CLASS: u16 = 2491;
+pub const MDC_ATTR_NAME_BINDING: u16 = 2510;
+pub const MDC_ATTR_LOCALE: u16 = 2600;
+pub const MDC_NOTI_ATTR_UPDT: u16 = 3330;
 
 // define types
 pub type oid_type = u16;
@@ -22,6 +22,7 @@ pub struct glb_handle {
 }
 
 // define Managed Object ID
+#[derive(Debug, Default, Clone)]
 pub struct managed_object_id {
     m_obj_class: oid_type,
     m_obj_inst: glb_handle,
@@ -52,12 +53,14 @@ pub enum nom_partition {
 }
 
 //define Type ID
+#[derive(Debug, Default, Clone)]
 pub struct Type {
     partition: nom_partition,
     code: oid_type,
 }
 
 //define Attribute value assertion
+#[derive(Debug, Default, Clone)]
 pub struct AVA_Type {
     attribute_id: OidType,
     attribute_value: &'static mut Any,
@@ -66,9 +69,12 @@ pub struct AVA_Type {
 pub type AttributeList = [AVA_Type];
 pub type AttributeIdList = [OidType];
 
+// TODO: Migrate to Chrono
 //define Time Types
 pub type RelativeTime = u32;
 pub type HighSerRelativeTime = &'static str;
+
+#[derive(Debug, Default, Clone)]
 pub struct AbsoluteTime {
     century: u8,
     year: u8,
@@ -80,6 +86,7 @@ pub struct AbsoluteTime {
     sec_fractions: u8,
 }
 
+#[derive(Debug, Default, Clone)]
 pub struct Date {
     century: u8,
     year: u8,
@@ -114,7 +121,7 @@ pub enum SimpleColour {
     col_blue = 0b001_u16,
     col_magenta = 0b101_u16,
     col_cyan = 0b011_u16,
-    col_white = 0b111_u16
+    col_white = 0b111_u16,
 }
 
 //define Locale Data
@@ -311,8 +318,8 @@ pub enum Language {
     Zulu = 0x7A750000 as u32,
 }
 
-    //define Country Data
-    #[repr(u32)]
+//define Country Data
+#[repr(u32)]
 pub enum Country {
     Afghanistan = 0x61660000 as u32,
     Aland_Islands = 0x61780000 as u32,
